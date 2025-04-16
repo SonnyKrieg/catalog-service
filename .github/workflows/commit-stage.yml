@@ -46,7 +46,7 @@ jobs:
 
   package:
     name: Package and Publish
-    if: ${{ github.ref == 'refs/heads/main'}}
+    if: ${{ github.ref == 'refs/heads/master'}}
     needs: [ build ]
     runs-on: ubuntu-22.04
     permissions:
