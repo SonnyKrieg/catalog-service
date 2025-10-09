@@ -1,3 +1,36 @@
+polar:
+  greeting: Bienvenido a el catalogo de libros!
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh
+
+spring:
+  datasource:
+    username: user
+    password: password
+    url: jdbc:postgresql://localhost:5430/polardb_catalog
+    hikari:
+      connection-timeout: 2000
+      maximum-pool-size: 5
+  application:
+    name: catalog-service
+  config:
+    import: "optional:configserver:"
+  cloud:
+    config:
+      uri: http://localhost:8888
+      request-connect-timeout: 5000
+      request-read-timeout: 5000
+      fail-fast: false
+      retry:
+        max-attempts: 6
+        initial-interval: 1000
+        max-interval: 2000
+        multiplier: 1.1
+
 server:
   port: 9001
   tomcat:
