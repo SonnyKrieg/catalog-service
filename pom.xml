@@ -123,8 +123,7 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 				<configuration>
 					<image>
-						<name>${project.artifactId}</name>
-
+						${env.REGISTRY}/${env.IMAGE_NAME}:${env.VERSION}
 						<env>
 							<BP_JVM_VERSION>21.*</BP_JVM_VERSION> <!-- Equivalente a environment -->
 						</env>
