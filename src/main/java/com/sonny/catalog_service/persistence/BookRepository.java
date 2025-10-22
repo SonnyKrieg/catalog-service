@@ -1,5 +1,6 @@
-package com.sonny.catalog_service.domain;
+package com.sonny.catalog_service.persistence;
 
+import com.sonny.catalog_service.domain.Book;
 import org.springframework.data.jdbc.repository.query.Modifying;
 import org.springframework.data.jdbc.repository.query.Query;
 import org.springframework.data.repository.CrudRepository;

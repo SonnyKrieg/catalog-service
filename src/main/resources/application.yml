@@ -39,5 +39,3 @@ server:
     threads:
       max: 50
       min-spare: 5
-
-

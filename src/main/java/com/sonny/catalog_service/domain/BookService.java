@@ -1,5 +1,6 @@
 package com.sonny.catalog_service.domain;
 
+import com.sonny.catalog_service.persistence.BookRepository;
 import org.springframework.stereotype.Service;
 
 @Service

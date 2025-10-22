@@ -2,7 +2,7 @@ package com.sonny.catalog_service;
 
 import com.sonny.catalog_service.config.DataConfig;
 import com.sonny.catalog_service.domain.Book;
-import com.sonny.catalog_service.domain.BookRepository;
+import com.sonny.catalog_service.persistence.BookRepository;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.data.jdbc.DataJdbcTest;
